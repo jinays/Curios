@@ -962,13 +962,6 @@ Source: http://www.analog.com/static/imported-files/data_sheets/AD8603_8607_8609
 <packages>
 </packages>
 <symbols>
-<symbol name="5V">
-<description>&lt;h3&gt;5V Voltage Supply&lt;/h3&gt;</description>
-<wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
-<pin name="5V" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
-<text x="0" y="2.794" size="1.778" layer="96" align="bottom-center">&gt;VALUE</text>
-</symbol>
 <symbol name="GND">
 <wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
 <pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
@@ -983,20 +976,6 @@ Source: http://www.analog.com/static/imported-files/data_sheets/AD8603_8607_8609
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="5V" prefix="SUPPLY">
-<description>&lt;h3&gt;5V Supply Symbol&lt;/h3&gt;
-&lt;p&gt;Power supply symbol for a specifically-stated 5V source.&lt;/p&gt;</description>
-<gates>
-<gate name="G$1" symbol="5V" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="GND" prefix="GND">
 <description>&lt;h3&gt;Ground Supply Symbol&lt;/h3&gt;
 &lt;p&gt;Generic signal ground supply symbol.&lt;/p&gt;</description>
@@ -1533,6 +1512,115 @@ Source: http://www.vishay.com/docs/20008/dcrcw.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="LinnesLab-Connectors">
+<packages>
+<package name="AUDIO_JACK_3.5MM_TRRS_SMD_RA" urn="urn:adsk.eagle:footprint:18169775/1" locally_modified="yes">
+<description>&lt;h3&gt;TRRS 3.5MM Right Angle Stereo Jack - SMT&lt;/h3&gt;
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count: 4&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=”http://cdn.sparkfun.com/datasheets/Prototyping/20153.pdf”&gt;Datasheet referenced for footprint&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;AUDIO_JACK_TRRS&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<wire x1="0.5" y1="-3.3" x2="10.5" y2="-3.3" width="0.254" layer="21"/>
+<wire x1="12.2" y1="3.3" x2="12.2" y2="-3.3" width="0.254" layer="21"/>
+<wire x1="12.2" y1="3.3" x2="11" y2="3.3" width="0.254" layer="21"/>
+<wire x1="0.5" y1="3.3" x2="0" y2="3.3" width="0.254" layer="51"/>
+<wire x1="0" y1="3.3" x2="0" y2="2.8" width="0.254" layer="51"/>
+<wire x1="0" y1="2.8" x2="0" y2="-2.8" width="0.254" layer="51"/>
+<wire x1="0" y1="-2.8" x2="0" y2="-3.3" width="0.254" layer="51"/>
+<wire x1="0" y1="-3.3" x2="0.5" y2="-3.3" width="0.254" layer="51"/>
+<wire x1="0" y1="2.8" x2="-2" y2="2.8" width="0.254" layer="51"/>
+<wire x1="-2" y1="2.8" x2="-2" y2="-2.8" width="0.254" layer="51"/>
+<wire x1="-2" y1="-2.8" x2="0" y2="-2.8" width="0.254" layer="51"/>
+<wire x1="7" y1="3.3" x2="9.4" y2="3.3" width="0.254" layer="21"/>
+<wire x1="4" y1="3.3" x2="5.4" y2="3.3" width="0.254" layer="21"/>
+<wire x1="0.5" y1="3.3" x2="2.4" y2="3.3" width="0.254" layer="21"/>
+<smd name="LEFT" x="10.2" y="3.25" dx="1.2" dy="2.5" layer="1"/>
+<smd name="GND/MIC" x="11.3" y="-3.25" dx="1.2" dy="2.5" layer="1"/>
+<smd name="RIGHT" x="6.2" y="3.25" dx="1.2" dy="2.5" layer="1"/>
+<smd name="GND" x="3.2" y="3.25" dx="1.2" dy="2.5" layer="1" rot="R180"/>
+<hole x="1.6" y="0" drill="1.2"/>
+<hole x="8.6" y="0" drill="1.2"/>
+<text x="3.175" y="0.127" size="0.7112" layer="25" ratio="20">&gt;NAME</text>
+<text x="3.175" y="-1.397" size="0.7112" layer="27" ratio="20">&gt;VALUE</text>
+</package>
+</packages>
+<packages3d>
+<package3d name="AUDIO_JACK_3.5MM_TRRS_SMD_RA" urn="urn:adsk.eagle:package:18169774/2" type="model">
+<description>&lt;h3&gt;TRRS 3.5MM Right Angle Stereo Jack - SMT&lt;/h3&gt;
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count: 4&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=”http://cdn.sparkfun.com/datasheets/Prototyping/20153.pdf”&gt;Datasheet referenced for footprint&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;AUDIO_JACK_TRRS&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="AUDIO_JACK_3.5MM_TRRS_SMD_RA"/>
+</packageinstances>
+</package3d>
+</packages3d>
+<symbols>
+<symbol name="AUDIO-JACK3-TRRS">
+<description>&lt;h3&gt; Audio Jack &lt;/h3&gt;
+&lt;p&gt;   Audio Jack with TRRS&lt;/p&gt;</description>
+<wire x1="-3.81" y1="-5.08" x2="-2.54" y2="-3.81" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="-3.81" x2="-1.27" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="-1.27" y1="-5.08" x2="2.54" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="0" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="0" y1="2.54" x2="-1.27" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="-1.27" y1="1.27" x2="-2.54" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="5.08" x2="-5.08" y2="5.08" width="0.1524" layer="94"/>
+<text x="-5.08" y="5.588" size="1.778" layer="95">&gt;NAME</text>
+<text x="-5.08" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
+<rectangle x1="-6.35" y1="-5.08" x2="-5.08" y2="5.08" layer="94"/>
+<pin name="RING1" x="5.08" y="2.54" visible="pad" length="short" rot="R180"/>
+<pin name="RING2" x="5.08" y="-5.08" visible="pad" length="short" rot="R180"/>
+<pin name="SLEEVE" x="5.08" y="5.08" visible="pad" length="short" rot="R180"/>
+<pin name="TIP" x="5.08" y="-2.54" visible="pad" length="short" rot="R180"/>
+<wire x1="-1.27" y1="-2.54" x2="0" y2="-1.27" width="0.1524" layer="94"/>
+<wire x1="0" y1="-1.27" x2="1.27" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="-2.54" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="AUDIO_JACK_TRRS" prefix="J" uservalue="yes">
+<description>&lt;h3&gt;Audio Jack - 3.5mm TRRS (SMD)&lt;/h3&gt;
+&lt;p&gt;This is a 3.5mm TRRS SMD audio jack. 
+&lt;br&gt;TRRS connectors are the audio-style connectors that you see on some phones, MP3 players and development boards. 
+&lt;br&gt;TRRS stands for “tip, ring, ring, sleeve,” which reflects that this  has three conductors and a ground. &lt;/p&gt;
+&lt;p&gt;&lt;b&gt;SparkFun Products:&lt;/b&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/12639”&gt;Audio Jack&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12968"&gt;mbed Starter Kit&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=”https://www.sparkfun.com/products/11570&gt;SparkFun TRRS 3.5mm Jack Breakout&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="AUDIO-JACK3-TRRS" x="0" y="0"/>
+</gates>
+<devices>
+<device name="SMD_RA" package="AUDIO_JACK_3.5MM_TRRS_SMD_RA">
+<connects>
+<connect gate="G$1" pin="RING1" pad="RIGHT"/>
+<connect gate="G$1" pin="RING2" pad="GND"/>
+<connect gate="G$1" pin="SLEEVE" pad="GND/MIC"/>
+<connect gate="G$1" pin="TIP" pad="LEFT"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:18169774/2"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="CONN-10676" constant="no"/>
+<attribute name="SF_ID" value="PRT-12639" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1545,7 +1633,6 @@ Source: http://www.vishay.com/docs/20008/dcrcw.pdf</description>
 <parts>
 <part name="B1" library="LinnesLab-Microcontrollers" deviceset="ARDUINO_UNO_R3_SHIELD_ICSP" device=""/>
 <part name="IC1" library="LinnesLab-AnalogIC" deviceset="AD623" device="N" package3d_urn="urn:adsk.eagle:package:16409/2"/>
-<part name="SUPPLY1" library="LinnesLab-Symbols" deviceset="5V" device=""/>
 <part name="RF" library="LinnesLab-Passives" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:15661944/2" value="47k"/>
 <part name="CF" library="LinnesLab-Passives" deviceset="CAPACITOR" device="0603" package3d_urn="urn:adsk.eagle:package:15661989/2" value="3.3nF"/>
 <part name="GND1" library="LinnesLab-Symbols" deviceset="GND" device=""/>
@@ -1556,23 +1643,22 @@ Source: http://www.vishay.com/docs/20008/dcrcw.pdf</description>
 <part name="R1" library="LinnesLab-Passives" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:15661944/2" value="10k"/>
 <part name="R2" library="LinnesLab-Passives" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:15661944/2" value="10k"/>
 <part name="SUPPLY2" library="LinnesLab-Symbols" deviceset="3.3V" device=""/>
-<part name="R3" library="LinnesLab-Passives" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:15661944/2" value="10k"/>
+<part name="R3" library="LinnesLab-Passives" deviceset="RESISTOR" device="0603" package3d_urn="urn:adsk.eagle:package:15661944/2" value="22k"/>
+<part name="J1" library="LinnesLab-Connectors" deviceset="AUDIO_JACK_TRRS" device="SMD_RA" package3d_urn="urn:adsk.eagle:package:18169774/2"/>
+<part name="CSAFE" library="LinnesLab-Passives" deviceset="CAPACITOR" device="0603" package3d_urn="urn:adsk.eagle:package:15661989/2" value="3.3nF"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 </plain>
 <instances>
-<instance part="B1" gate="G$1" x="15.24" y="53.34" smashed="yes">
-<attribute name="NAME" x="5.588" y="84.582" size="1.778" layer="95" font="vector"/>
-<attribute name="VALUE" x="5.08" y="22.606" size="1.778" layer="96" font="vector" align="top-left"/>
+<instance part="B1" gate="G$1" x="2.54" y="53.34" smashed="yes">
+<attribute name="NAME" x="-7.112" y="84.582" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="-7.62" y="22.606" size="1.778" layer="96" font="vector" align="top-left"/>
 </instance>
 <instance part="IC1" gate="G$1" x="53.34" y="58.42" smashed="yes">
 <attribute name="NAME" x="54.61" y="59.69" size="1.778" layer="95"/>
 <attribute name="VALUE" x="64.77" y="53.34" size="1.778" layer="96"/>
-</instance>
-<instance part="SUPPLY1" gate="G$1" x="63.5" y="20.32" smashed="yes">
-<attribute name="VALUE" x="63.5" y="23.114" size="1.778" layer="96" align="bottom-center"/>
 </instance>
 <instance part="RF" gate="G$1" x="124.46" y="58.42" smashed="yes">
 <attribute name="NAME" x="120.65" y="59.9186" size="1.778" layer="95"/>
@@ -1624,37 +1710,67 @@ Source: http://www.vishay.com/docs/20008/dcrcw.pdf</description>
 <attribute name="NAME" x="42.1386" y="62.23" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="37.338" y="62.23" size="1.778" layer="96" rot="R270"/>
 </instance>
+<instance part="J1" gate="G$1" x="25.4" y="58.42" smashed="yes">
+<attribute name="NAME" x="20.32" y="64.008" size="1.778" layer="95"/>
+<attribute name="VALUE" x="20.32" y="50.8" size="1.778" layer="96"/>
+</instance>
+<instance part="CSAFE" gate="G$1" x="83.82" y="45.72" smashed="yes" rot="R180">
+<attribute name="NAME" x="82.296" y="42.799" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="84.836" y="47.879" size="1.778" layer="96" rot="R180"/>
+</instance>
 </instances>
 <busses>
 </busses>
 <nets>
-<net name="5V" class="0">
-<segment>
-<pinref part="B1" gate="G$1" pin="5V"/>
-<wire x1="2.54" y1="55.88" x2="0" y2="55.88" width="0.1524" layer="91"/>
-<label x="-2.54" y="55.88" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="OP1" gate="P" pin="V+"/>
-<wire x1="91.44" y1="50.8" x2="91.44" y2="53.34" width="0.1524" layer="91"/>
-<label x="91.44" y="53.34" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="GND" class="0">
 <segment>
 <pinref part="B1" gate="G$1" pin="GND@2"/>
-<wire x1="2.54" y1="48.26" x2="0" y2="48.26" width="0.1524" layer="91"/>
-<label x="-2.54" y="48.26" size="1.778" layer="95"/>
+<wire x1="-10.16" y1="48.26" x2="-12.7" y2="48.26" width="0.1524" layer="91"/>
+<label x="-15.24" y="48.26" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="OP1" gate="P" pin="V-"/>
 <wire x1="91.44" y1="35.56" x2="91.44" y2="33.02" width="0.1524" layer="91"/>
 <label x="91.44" y="33.02" size="1.778" layer="95"/>
+<pinref part="CSAFE" gate="G$1" pin="1"/>
+<wire x1="83.82" y1="40.64" x2="83.82" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="35.56" x2="91.44" y2="35.56" width="0.1524" layer="91"/>
+<junction x="91.44" y="35.56"/>
 </segment>
 <segment>
 <pinref part="R2" gate="G$1" pin="1"/>
 <wire x1="83.82" y1="91.44" x2="81.28" y2="91.44" width="0.1524" layer="91"/>
-<label x="78.74" y="93.98" size="1.778" layer="95"/>
+<label x="81.28" y="91.44" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="-V"/>
+<wire x1="53.34" y1="43.18" x2="53.34" y2="40.64" width="0.1524" layer="91"/>
+<label x="53.34" y="38.1" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="B1" gate="G$1" pin="GND@1"/>
+<wire x1="-10.16" y1="45.72" x2="-12.7" y2="45.72" width="0.1524" layer="91"/>
+<label x="-15.24" y="45.72" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="B1" gate="G$1" pin="GND@0"/>
+<wire x1="-10.16" y1="43.18" x2="-12.7" y2="43.18" width="0.1524" layer="91"/>
+<label x="-15.24" y="43.18" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="B1" gate="G$1" pin="GND"/>
+<wire x1="-10.16" y1="25.4" x2="-12.7" y2="25.4" width="0.1524" layer="91"/>
+<label x="-15.24" y="25.4" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="J1" gate="G$1" pin="SLEEVE"/>
+<wire x1="30.48" y1="63.5" x2="30.48" y2="68.58" width="0.1524" layer="91"/>
+<label x="30.48" y="68.58" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="J1" gate="G$1" pin="RING2"/>
+<wire x1="30.48" y1="53.34" x2="30.48" y2="48.26" width="0.1524" layer="91"/>
+<label x="30.48" y="48.26" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -1680,11 +1796,9 @@ Source: http://www.vishay.com/docs/20008/dcrcw.pdf</description>
 <net name="OUTPUT" class="0">
 <segment>
 <pinref part="B1" gate="G$1" pin="A0"/>
-<wire x1="2.54" y1="81.28" x2="0" y2="81.28" width="0.1524" layer="91"/>
-<label x="-2.54" y="83.82" size="1.778" layer="95"/>
+<wire x1="-10.16" y1="81.28" x2="-12.7" y2="81.28" width="0.1524" layer="91"/>
+<label x="-15.24" y="83.82" size="1.778" layer="95"/>
 </segment>
-</net>
-<net name="N$10" class="0">
 <segment>
 <pinref part="CF" gate="G$1" pin="2"/>
 <wire x1="127" y1="45.72" x2="132.08" y2="45.72" width="0.1524" layer="91"/>
@@ -1696,6 +1810,9 @@ Source: http://www.vishay.com/docs/20008/dcrcw.pdf</description>
 <junction x="132.08" y="58.42"/>
 <pinref part="OP1" gate="A" pin="OUT"/>
 <wire x1="139.7" y1="73.66" x2="144.78" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="73.66" x2="147.32" y2="73.66" width="0.1524" layer="91"/>
+<junction x="144.78" y="73.66"/>
+<label x="149.86" y="73.66" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -1709,7 +1826,7 @@ Source: http://www.vishay.com/docs/20008/dcrcw.pdf</description>
 <junction x="91.44" y="71.12"/>
 </segment>
 </net>
-<net name="N$2" class="0">
+<net name="VREF" class="0">
 <segment>
 <pinref part="OP1" gate="A" pin="+IN"/>
 <pinref part="OP1" gate="B" pin="OUT"/>
@@ -1720,18 +1837,40 @@ Source: http://www.vishay.com/docs/20008/dcrcw.pdf</description>
 <wire x1="104.14" y1="91.44" x2="104.14" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="104.14" y1="86.36" x2="119.38" y2="86.36" width="0.1524" layer="91"/>
 <junction x="119.38" y="86.36"/>
+<wire x1="119.38" y1="93.98" x2="121.92" y2="93.98" width="0.1524" layer="91"/>
+<junction x="119.38" y="93.98"/>
+<label x="124.46" y="93.98" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="REF"/>
+<wire x1="58.42" y1="48.26" x2="58.42" y2="45.72" width="0.1524" layer="91"/>
+<label x="58.42" y="45.72" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="3.3V" class="0">
 <segment>
 <pinref part="B1" gate="G$1" pin="3.3V"/>
-<wire x1="2.54" y1="53.34" x2="0" y2="53.34" width="0.1524" layer="91"/>
-<label x="-2.54" y="53.34" size="1.778" layer="95"/>
+<wire x1="-10.16" y1="53.34" x2="-12.7" y2="53.34" width="0.1524" layer="91"/>
+<label x="-15.24" y="53.34" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="+V"/>
+<wire x1="53.34" y1="73.66" x2="53.34" y2="76.2" width="0.1524" layer="91"/>
+<label x="53.34" y="76.2" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="R1" gate="G$1" pin="2"/>
 <wire x1="83.82" y1="101.6" x2="81.28" y2="101.6" width="0.1524" layer="91"/>
-<label x="78.74" y="104.14" size="1.778" layer="95"/>
+<label x="81.28" y="104.14" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="OP1" gate="P" pin="V+"/>
+<wire x1="91.44" y1="50.8" x2="91.44" y2="53.34" width="0.1524" layer="91"/>
+<label x="93.98" y="53.34" size="1.778" layer="95"/>
+<pinref part="CSAFE" gate="G$1" pin="2"/>
+<wire x1="83.82" y1="48.26" x2="83.82" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="50.8" x2="91.44" y2="50.8" width="0.1524" layer="91"/>
+<junction x="91.44" y="50.8"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -1767,6 +1906,24 @@ Source: http://www.vishay.com/docs/20008/dcrcw.pdf</description>
 <pinref part="R3" gate="G$1" pin="2"/>
 <pinref part="IC1" gate="G$1" pin="RG@2"/>
 <wire x1="40.64" y1="53.34" x2="45.72" y2="53.34" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$8" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="-"/>
+<pinref part="J1" gate="G$1" pin="TIP"/>
+<wire x1="30.48" y1="55.88" x2="35.56" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="55.88" x2="35.56" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="48.26" x2="45.72" y2="48.26" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="J1" gate="G$1" pin="RING1"/>
+<wire x1="30.48" y1="60.96" x2="35.56" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="60.96" x2="35.56" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="G$1" pin="+"/>
+<wire x1="35.56" y1="68.58" x2="45.72" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
